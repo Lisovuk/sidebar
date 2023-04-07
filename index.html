@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+   <style>
+   body {
+        background-image: url('./neon-tropical-monstera-leaf-banner.jpg');
+        background-repeat: no-repeat;
+        background-size: cover;
+        margin: 0;
+        padding: 0;
+        font-family: sans-serif;
+      }
+      nav {
+        background-color: #010101;
+        position: fixed;
+        top: 50px;
+        left: -250px;
+        height: 100%;
+        width: 250px;
+        transition: all 0.5s ease;
+      }
+      nav.active {
+        left: 0;
+      }
+      nav ul {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+      }
+      nav ul li {
+        border-bottom: 1px solid #444;
+        padding: 10px;
+      }
+      nav ul li a {
+        color: #fff;
+        text-decoration: none;
+      }
+      .menu-toggle {
+        display: block;
+        width: 98%;
+        font-weight: 700;
+        background-color: #000000;
+        color: #fff;
+        text-decoration: none;
+        padding: 15px;
+        text-align: center;
+        cursor: pointer;
+      }
+
+   </style>
+   <title>Document</title>
+</head>
+<body>
+   <nav>
+      <ul>
+        <li><a href="#">Главная</a></li>
+        <li><a href="#">О нас</a></li>
+        <li><a href="#">Контакты</a></li>
+      </ul>
+    </nav>
+    <a href="#" class="menu-toggle">Menu</a>
+
+   <script>
+
+      $(function() { //запуск JQuery
+         $('.menu-toggle').click(function() {
+            $('nav').toggleClass('active');
+         })
+      });
+   </script>
+</body>
+</html>
+    
